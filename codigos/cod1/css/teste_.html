@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form>
+  <input class="target" type="text" value="Field 1">
+  <select class="target">
+    <option value="option1" selected="selected">Option 1</option>
+    <option value="option2">Option 2</option>
+  </select>
+</form>
+<div id="other">
+  Trigger the handler
+</div>
+
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+
+	$(".target").change( function(){
+		alert("it's foggy!");
+	});
+
+	$( "#other" ).click(function() {
+    $( ".target" ).change();
+    });
+
+
+</script>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
